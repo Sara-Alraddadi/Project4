@@ -13,6 +13,4 @@ app.use(express.urlencoded({extended : false}))//to use json
 app.use("/user", require('./routes/user'));
 
 
-
-
 app.listen(5000 , ()=> console.log("server is running"))

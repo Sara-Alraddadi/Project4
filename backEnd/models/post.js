@@ -25,7 +25,10 @@ var postSchema = new Schema({
     price: {
         type: Number,
         default: 0
-    }
+    }, 
+    users : Array  ,
+    status : String ,
+    offers : [{type : mongoose.Schema.Types.ObjectId , ref : 'Offer'}]
 
 
 }) 

@@ -17,7 +17,8 @@ var offerSchema = new Schema({
     photographerName: {
         type: String,
         default: ''
-    }
+    },
+    photogrphor : {type : mongoose.Schema.Types.ObjectId , ref : 'user'}
 
 })
 

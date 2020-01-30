@@ -12,5 +12,11 @@ app.use(express.urlencoded({extended : false}))//to use json
 //user route
 app.use("/user", require('./routes/user'));
 
+//offer route
+app.use("/offer", require('./routes/offer'));
+
+//post route
+app.use("/post", require('./routes/post'));
+
 
 app.listen(5000 , ()=> console.log("server is running"))

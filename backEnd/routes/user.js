@@ -39,12 +39,14 @@ router.post('/login', (req, res) => {
         .then(user => {
             if (user) {
                 if (bcrypt.compareSync(req.body.password, user.password)) {
+                   
                     user.password = ""
                     var paylod = { user }
                     let token = jwt.sign(paylod, "secret", { expiresIn: 1440 })
                     // res.send(paylod)
                     res.json({token: token, success: true})
                 }
+                
                 //    if password not the same 
                 else {
                     res.send("password is not currect")

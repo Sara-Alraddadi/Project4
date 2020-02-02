@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
     res.send('user test');
 })
 
+
 process.env.SECRET_KEY = 'secret'
 // register
 router.post('/register', (req, res) => {

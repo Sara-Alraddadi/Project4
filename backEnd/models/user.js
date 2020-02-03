@@ -25,6 +25,9 @@ var userSchema = new Schema({
     images: {
         type: Array //required in the front End
     },
+    phtographerInfo: {
+        type: String
+    },
     posts: [{type : Schema.Types.ObjectId, ref : 'Post'}]
 
 })

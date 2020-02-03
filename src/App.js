@@ -1,4 +1,6 @@
-import React, {Component} from  'react';
+import React from 'react';
+import logo from './logo.svg';
+import PostAndOffers from './PostAndOffers';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './Login';
@@ -15,20 +17,14 @@ import PhotographyHome from './PhotographyHome';
 //   Link
 // } from 'react-router-dom'; 
 
-
-class App extends Component {
-
-  render(){
-
- return (
-<div>
-{/* <HomePage/> */}
-{/* <PhotographyHome/> */}
-<Login/>
-   {/* <Footer/> */}
-  
-</div>
- )}
-       }  
+function App() {
+  return (
+    <div>
+      <PostAndOffers/>
+      <Login/>
+    </div>
+  );
+}
+ 
        
   export default App ;

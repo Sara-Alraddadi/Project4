@@ -1,23 +1,32 @@
 const express = require('express');
 const router = express.Router();
-const Post = require('../models/post')
-const Offer = require('../models/offer')
+const Post = require('../models/post');
+const Offer = require('../models/offer');
+const User = require('../models/user');
+
 router.get('/', (req, res) => {
 
     res.send('post test');
 })
 
+//Create Post 
 router.post('/createpost', (req, res) => {
 
 
     Post.create(req.body)
         .then(post => {
 
-            res.json({ msg: "post created" })
+            User.findByIdAndUpdate(req.body.id ,{ $push : {posts : post }})
+            .then(user => {
+                res.json({ msg: "post created" })
+            }).catch(err => res.send(err))
+
+           
 
         }).catch(err => res.send(err))
 })
 
+//Adding offer 
 router.post('/addOfeer', (req, res) => {
 
 
@@ -30,6 +39,8 @@ router.post('/addOfeer', (req, res) => {
     }
     Offer.create(newOffer)
         .then(offer => {
+
+
             res.send(offer)
 
         }).catch(err => console.log(err))

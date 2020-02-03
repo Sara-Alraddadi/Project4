@@ -26,7 +26,6 @@ var postSchema = new Schema({
         type: Number,
         default: 0
     }, 
-    users : Array  ,
     status : String ,
     offers : [{type : mongoose.Schema.Types.ObjectId , ref : 'Offer'}]
 

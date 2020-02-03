@@ -2,7 +2,11 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var userSchema = new Schema({
-    userName: {
+    first_name: {
+        type: String,
+        required: true
+    },
+    last_name: {
         type: String,
         required: true
     },
@@ -20,7 +24,8 @@ var userSchema = new Schema({
     },
     images: {
         type: Array //required in the front End
-    }
+    },
+    posts: [{type : Schema.Types.ObjectId, ref : 'Post'}]
 
 })
 

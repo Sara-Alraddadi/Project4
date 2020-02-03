@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
 //Create Post 
 router.post('/createpost', (req, res) => {
 
-
     Post.create(req.body)
         .then(post => {
 

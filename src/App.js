@@ -1,4 +1,5 @@
 import React, {Component} from  'react';
+import PhotographerProfile from './PhotographerProfile.js';
 import './App.css';
 import Signup from './SignUp';
 import PostForm from './PostForm';
@@ -7,12 +8,11 @@ import PostUser from './PostUser';
 import OfferPhoto from './OfferPhoto';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
 class App extends Component {
   render(){
  return (
 <div>
+ <PhotographerProfile/>
  <Signup/>  
 <PostForm/>
 <OfferForm/> 

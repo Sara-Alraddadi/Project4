@@ -27,8 +27,8 @@ var postSchema = new Schema({
         default: 0
     }, 
     status : String ,
-    offers : [{type : mongoose.Schema.Types.ObjectId , ref : 'Offer'}]
-
+    offers : [{type : mongoose.Schema.Types.ObjectId , ref : 'Offer'}],
+    user: {type : mongoose.Schema.Types.ObjectId , ref : 'User'}
 
 }) 
 

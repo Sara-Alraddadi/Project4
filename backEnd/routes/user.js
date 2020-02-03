@@ -33,6 +33,18 @@ router.post('/register', (req, res) => {
             }
         }).catch(err => res.send(err))
 })
+
+//get photographer id(to map through the images)
+router.get('/user/:id', (res, req) =>{
+    User.findById(req.params.id, (err, foundUser)=> {
+        if (err) { res.send(err) }
+        res.json(foundUser);
+    })
+})
+
+
+
+
 // login
 router.post('/login', (req, res) => {
     User.findOne({ email: req.body.email })
@@ -58,3 +70,6 @@ router.post('/login', (req, res) => {
         }).catch(err => res.send(err))
 })
 module.exports = router;
+
+
+

@@ -1,30 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import PostAndOffers from './PostAndOffers';
+import React, {Component} from  'react';
 import './App.css';
+import Signup from './SignUp';
+import PostForm from './PostForm';
+import OfferForm from './OfferForm';
+import PostUser from './PostUser';
+import OfferPhoto from './OfferPhoto';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Login from './Login';
-// import logo from './logo.svg';
-// import HomePage from './UserHome';
-// import Nav from './Nav';
-// import Footer from './Footer';
-// import About from './About';
-// import Footer from './Footer';
-import PhotographyHome from './PhotographyHome';
-// import {
-//   BrowserRouter as Router,
-//   Route,
-//   Link
-// } from 'react-router-dom'; 
 
-function App() {
-  return (
-    <div>
-      <PostAndOffers/>
-      <Login/>
-    </div>
-  );
-}
- 
-       
+
+
+class App extends Component {
+  render(){
+ return (
+<div>
+ <Signup/>  
+<PostForm/>
+<OfferForm/> 
+ <PostUser/> 
+<OfferPhoto/>
+
+</div>
+ )}
+       }  
   export default App ;

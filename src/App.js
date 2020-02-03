@@ -2,20 +2,15 @@ import React from "react";
 import PhotographerProfile from './PhotographerProfile.js';
 import PostAndOffers from './PostAndOffers';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Signup from './SignUp';
+import PostForm from './PostForm';
+import OfferForm from './OfferForm';
+import PostUser from './PostUser';
+import OfferPhoto from './OfferPhoto';
 import Login from './Login';
-// import logo from './logo.svg';
-// import HomePage from './UserHome';
-// import Nav from './Nav';
-// import Footer from './Footer';
-// import About from './About';
-// import Footer from './Footer';
-import PhotographyHome from './PhotographyHome';
-// import {
-//   BrowserRouter as Router,
-//   Route,
-//   Link
-// } from 'react-router-dom'; 
+import PostAndOffers from './PostAndOffers';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter  , Route} from 'react-router-dom';
 
 function App() {
   return (

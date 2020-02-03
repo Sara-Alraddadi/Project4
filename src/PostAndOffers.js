@@ -8,7 +8,7 @@ class PostAndOffers extends Component{
         return(
             <div>
                
-                <div className="content">
+                <div className="content1">
                     <h2 id = "header">Title</h2> 
                     <hr/><br/>
                     

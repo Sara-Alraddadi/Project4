@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
 //Create Post 
 router.post('/createpost', (req, res) => {
 
-
     Post.create(req.body)
         .then(post => {
 
@@ -27,7 +26,7 @@ router.post('/createpost', (req, res) => {
 })
 
 //Adding offer 
-router.post('/addOfeer', (req, res) => {
+router.post('/addOffer', (req, res) => {
 
 
     var newOffer = {

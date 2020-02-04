@@ -1,33 +1,25 @@
-import React, {Component} from 'react';
-import { Row, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-class Signup extends Component{
-  render () {
-    return (
-        <form>
-                <h3>Sign Up</h3>
+import React from "react";
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput } from 'mdbreact';
 
-                <div className="form-group">
-                    <label>First name</label>
-                    <input type="text" className="form-control" placeholder="First name" />
-                </div>
-
-                <div className="form-group">
-                    <label>Last name</label>
-                    <input type="text" className="form-control" placeholder="Last name" />
-                </div>
-
-                <div className="form-group">
-                    <label>Email address</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
-                </div>
-
-                <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
-                </div>
-
-            <div className="form-group">
-                <label className="mr-3">   
+const FormPage = () => {
+return (
+<MDBContainer>
+  <MDBRow>
+    <MDBCol md="6">
+      <form>
+        <p className="h5 text-center mb-4"></p>
+        <div className="grey-text">
+          <MDBInput label="Your name" icon="user" group type="text" validate error="wrong"
+            success="right" />
+          <MDBInput label="Your email" icon="envelope" group type="email" validate error="wrong"
+            success="right" />
+          <MDBInput label="Confirm your email" icon="exclamation-triangle" group type="text" validate
+            error="wrong" success="right" />
+          <MDBInput label="Your password" icon="lock" group type="password" validate />
+          
+          <p>Register As:</p>
+          <div className="form-group">
+                <label className="mr-3"> 
                 <input  type="radio" value="option1"  />
                User
                 </label>
@@ -37,12 +29,35 @@ class Signup extends Component{
                 </label>
              </div>
 
-                
-                <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
-                <p className="forgot-password text-right">
-                    Already registered <a href="#">sign in?</a>
-                </p>
-            </form>
-    )
-}}
-export default Signup;
+
+           <div className="input-group">
+          <div className="input-group-prepend">
+          <span className="input-group-text" id="inputGroupFileAddon01">
+          Attach
+          </span>
+          </div>
+          <div className="custom-file">
+          <input
+         type="file"
+         className="custom-file-input"
+          id="inputGroupFile01"
+          aria-describedby="inputGroupFileAddon01"
+         />
+         <label className="custom-file-label" htmlFor="inputGroupFile01">
+         Image
+         </label>
+         </div>
+         </div>
+            
+        </div>
+        <div className="text-center">
+          <MDBBtn color="black">Register</MDBBtn>
+        </div>
+      </form>
+    </MDBCol>
+  </MDBRow>
+</MDBContainer>
+);
+};
+
+export default FormPage;

@@ -6,7 +6,7 @@ class OfferForm extends Component{
     render () {
       return (
 <div>
-<Form>
+<Form className=''>
 
     
     <InputGroup>
@@ -17,19 +17,19 @@ class OfferForm extends Component{
        
     <FormGroup>
         <Label for="exampleText">Details</Label>
-        <Input type="textarea" name="text" id="exampleText" />
+        <Input className="text_box" type="textarea" name="text" id="exampleText" />
       </FormGroup>
 
       <FormGroup>
         <Label for="examplePassword">Photographer Name</Label>
-        <Input type="name" name="name" id="examplePassword" placeholder="name" />
+        <Input className="text_box" type="name" name="name" id="examplePassword" placeholder="name" />
       </FormGroup>
       
 
 
       <FormGroup>
         <Label for="exampleText">Date</Label>
-        <Input type="date" name="date" id="exampleText" />
+        <Input className="text_box" type="date" name="date" id="exampleText" />
       </FormGroup>
 
 

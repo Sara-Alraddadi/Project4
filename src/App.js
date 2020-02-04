@@ -15,22 +15,25 @@ class App extends Component {
   render(){
  return (
     <div>
-    
-    <BrowserRouter >
-
-    <Route  path = "/home" render = { ()=> <h1> this is home page</h1>} />
-    <Route  path = "/PhotographerProfile" render = { ()=> <PhotographerProfile/>} />
-    <Route  path = "/Login" render = { ()=> <Login/>} />
-    <Route  path = "/Signup" render = { ()=> <Signup/> } />
-    <Route  path = "/PostAndOffers" render = { ()=>  <PostAndOffers/> } />
-    <Route  path = "/PostForm" render = { ()=> <PostForm/> } />
-    <Route  path = "/OfferForm" render = { ()=> <OfferForm/> } />
-    <Route  path = "/PostUser" render = { ()=>  <PostUser/> } />
-    <Route  path = "/OfferPhoto" render = { ()=>  <OfferPhoto/> } />
-
-    <BrowserRouter/>
-    
+   {/* <Signup/> */}
+   <PostForm/> 
+   {/* <OfferForm/> */}
+   {/* <PostUser/> */}
+  {/* <OfferPhoto/> */}
     </div>
  )}
 }  
   export default App;
+//   <BrowserRouter >
+
+//  <Route  path = "/home" render = { ()=> <h1> this is home page</h1>} />
+//   <Route  path = "/PhotographerProfile" render = { ()=> <PhotographerProfile/>} />
+//   <Route  path = "/Login" render = { ()=> <Login/>} />
+//   <Route  path = "/Signup" render = { ()=> <Signup/> } />
+//   <Route  path = "/PostAndOffers" render = { ()=>  <PostAndOffers/> } />
+//   <Route  path = "/PostForm" render = { ()=> <PostForm/> } />
+//   <Route  path = "/OfferForm" render = { ()=> <OfferForm/> } />
+//   <Route  path = "/PostUser" render = { ()=>  <PostUser/> } />
+//   <Route  path = "/OfferPhoto" render = { ()=>  <OfferPhoto/> } />
+
+//   <BrowserRouter/> 

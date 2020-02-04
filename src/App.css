@@ -37,3 +37,13 @@
     transform: rotate(360deg);
   }
 }
+.text_box{
+  display: flex;
+  border: 40px solid rgba(220, 220, 220, 0.767);
+  margin: 30px;
+  width: 200px !important ; 
+}
+
+.form{
+  text-align: center;
+}

@@ -7,26 +7,35 @@ import OfferForm from './OfferForm';
 import PostUser from './PostUser';
 import OfferPhoto from './OfferPhoto';
 import Login from './Login';
+import Home from './Home';
+import Nav from './Nav';
 import PostAndOffers from './PostAndOffers';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import ReactDOM from "react-dom";
+// import { BrowserRouter, Route} from 'react-router-dom';
+
 
 class App extends Component {
   render(){
  return ( 
-
-    <BrowserRouter>
-  <Route  path = "/home" render = { ()=> <h1> this is home page</h1>} />
-  <Route  path = "/PhotographerProfile" render = { ()=> <PhotographerProfile/>} />
-  <Route  path = "/Login" render = { ()=> <Login/>} />
-  <Route  path = "/Signup" render = { ()=> <Signup/> } />
-  <Route  path = "/PostAndOffers" render = { ()=>  <PostAndOffers/> } />
-  <Route  path = "/PostForm" render = { ()=> <PostForm/> } />
-  <Route  path = "/OfferForm" render = { ()=> <OfferForm/> } />
-  <Route  path = "/PostUser" render = { ()=>  <PostUser/> } />
-  <Route  path = "/OfferPhoto" render = { ()=>  <OfferPhoto/> } />
-  <BrowserRouter/>
-
+      <div>
+      <Nav></Nav>
+    <Router>
+      <div>
+        <Route exact path="/" component={Home} />
+        <Route path="/PhotographerProfile" component={PhotographerProfile} />
+        <Route path="/Login" component={Login} />
+        <Route path="/Signup" component={Signup} />
+        <Route path="/PostAndOffers" component={PostAndOffers} />
+        <Route path="/PostForm" component={PostForm} />
+        <Route path="/LoOfferFormgin" component={OfferForm} />
+        <Route path="/PostUser" component={PostUser} />
+        <Route path="/OfferPhoto" component={OfferPhoto} />
+      </div>
+     
+    </Router>
+    </div>
  )}
 }  
   export default App;

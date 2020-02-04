@@ -25,6 +25,7 @@ var userSchema = new Schema({
     images: {
         type: Array //required in the front End
     },
+
     phtographerInfo: {
         type: String
     },

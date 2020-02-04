@@ -1,34 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import PostAndOffers from './PostAndOffers';
+import React, {Component} from  'react';
+import PhotographerProfile from './PhotographerProfile.js';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Signup from './SignUp';
+import PostForm from './PostForm';
+import OfferForm from './OfferForm';
+import PostUser from './PostUser';
+import OfferPhoto from './OfferPhoto';
 import Login from './Login';
-// import logo from './logo.svg';
-import HomePage from './UserHome';
+import Home from './Home';
 import Nav from './Nav';
-import About from './About';
-import Footer from './Footer';
-import PhotographyHome from './PhotographyHome';
-// import {
-//   BrowserRouter as Router,
-//   Route,
-//   Link
-// } from 'react-router-dom'; 
+import PostAndOffers from './PostAndOffers';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import ReactDOM from "react-dom";
+// import { BrowserRouter, Route} from 'react-router-dom';
 
-function App() {
-  return (
-    <div>
-      {/* <Nav/> */}
-      <HomePage/>
-      <PhotographyHome/>
-      {/* <PostAndOffers/>
-      // <Login/> */}
-      <About/>
-      <Footer/>
+
+class App extends Component {
+  render(){
+ return ( 
+      <div>
+      <Nav></Nav>
+    <Router>
+      <div>
+        <Route exact path="/" component={Home} />
+        <Route path="/PhotographerProfile" component={PhotographerProfile} />
+        <Route path="/Login" component={Login} />
+        <Route path="/Signup" component={Signup} />
+        <Route path="/PostAndOffers" component={PostAndOffers} />
+        <Route path="/PostForm" component={PostForm} />
+        <Route path="/LoOfferFormgin" component={OfferForm} />
+        <Route path="/PostUser" component={PostUser} />
+        <Route path="/OfferPhoto" component={OfferPhoto} />
+      </div>
+     
+    </Router>
     </div>
-  );
-}
- 
-       
-  export default App ;
+ )}
+}  
+  export default App;
+  
+  

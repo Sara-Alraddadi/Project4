@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import './PostAndOffers.css';
+import './postAndOffers.css';
 
 
 class PostAndOffers extends Component{
@@ -8,7 +8,7 @@ class PostAndOffers extends Component{
         return(
             <div>
                
-                <div className="content">
+                <div className="content1">
                     <h2 id = "header">Title</h2> 
                     <hr/><br/>
                     

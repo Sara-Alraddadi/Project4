@@ -37,7 +37,11 @@ router.post('/addOffer', (req, res) => {
         photogrphor: req.body.photogrphorId
     }
     Offer.create(newOffer)
-        .then(offer => {
+        .then(offer => { // creating a new offer + linking it to the photographer
+            User.findByIdAndUpdate(req.body.id ,{ $push : {offers : offer }})
+            .then(user => {
+                res.json({ msg: "created a new offer" })
+            }).catch(err => res.send(err))
 
 
             res.send(offer)

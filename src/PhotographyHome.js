@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {CardDeck, Card} from 'react-bootstrap';
+import {CardGroup, Card} from 'react-bootstrap';
 
 class PhotographyHome extends Component{
   render () {
@@ -7,6 +7,51 @@ class PhotographyHome extends Component{
        
 
 <div> 
+
+<CardGroup>
+  <Card>
+    <Card.Img variant="top" src="/first.jpg/100px160" />
+    <Card.Body>
+      <Card.Title>Photographer Information</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Body>
+      <Card.Title>Photographer Information</Card.Title>
+      <Card.Text>
+        This card has supporting text below as a natural lead-in to additional
+        content.{' '}
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Body>
+      <Card.Title>Photographer Information</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This card has even longer content than the first to
+        show that equal height action.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+</CardGroup>
+
+{/*   
 <CardDeck>
   <Card>
     <Card.Img variant="top" src="https://picsum.photos/100/100" />
@@ -48,7 +93,7 @@ class PhotographyHome extends Component{
       <small className="text-muted">Last updated 3 mins ago</small>
     </Card.Footer>
   </Card>
-</CardDeck>
+</CardDeck> */}
 </div>
     )
 }}

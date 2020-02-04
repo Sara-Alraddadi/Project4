@@ -1,307 +1,97 @@
 import React, {Component} from 'react';
-// import UserHome from './UserHome';
+import {CardGroup, Card, Button} from 'react-bootstrap';
+import './UserHome.css';
 
 class HomePage extends Component{
-  render () {
-    return (
-
-     <div className="container">
-
-    <h5 className="section-title h1">OUR TEAM</h5>
-            <div className="row">
-             
-                <div className="col-xs-12 col-sm-6 col-md-4">
-                    <div className="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div className="mainflip">
-                            <div className="frontside">
-                                <div className="card">
-                                    <div className="card-body text-center">
-                                        <p><img className=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
-                                        <h4 className="card-title">Sunlimetech</h4>
-                                        <p className="card-text">This is basic card with image on top, title, description and button.</p>
-                                        <a href="#" className="btn btn-primary btn-sm"><i className="fa fa-plus"></i></a>
-                                    </div>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="backside">
-                                <div className="card">
-                                    <div className="card-body text-center mt-4">
-                                        <h4 className="card-title">Sunlimetech</h4>
-                                        <p className="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                        <ul className="list-inline">
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-skype"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-google"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             
-             
-                <div className="col-xs-12 col-sm-6 col-md-4">
-                    <div className="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div className="mainflip">
-                            <div className="frontside">
-                                <div className="card">
-                                    <div className="card-body text-center">
-                                        <p><img className=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png" alt="card image"></p>
-                                        <h4 className="card-title">Sunlimetech</h4>
-                                        <p className="card-text">This is basic card with image on top, title, description and button.</p>
-                                        <a href="#" className="btn btn-primary btn-sm"><i className="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="backside">
-                                <div className="card">
-                                    <div className="card-body text-center mt-4">
-                                        <h4 className="card-title">Sunlimetech</h4>
-                                        <p className="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                        <ul className="list-inline">
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-skype"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-google"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             
-             
-                <div className="col-xs-12 col-sm-6 col-md-4">
-                    <div className="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div className="mainflip">
-                            <div className="frontside">
-                                <div className="card">
-                                    <div className="card-body text-center">
-                                        <p><img className=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png" alt="card image"></p>
-                                        <h4 className="card-title">Sunlimetech</h4>
-                                        <p className="card-text">This is basic card with image on top, title, description and button.</p>
-                                        <a href="#" className="btn btn-primary btn-sm"><i className="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="backside">
-                                <div className="card">
-                                    <div className="card-body text-center mt-4">
-                                        <h4 className="card-title">Sunlimetech</h4>
-                                        <p className="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                        <ul className="list-inline">
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-skype"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-google"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             
-             
-                <div className="col-xs-12 col-sm-6 col-md-4">
-                    <div className="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div className="mainflip">
-                            <div className="frontside">
-                                <div className="card">
-                                    <div className="card-body text-center">
-                                        <p><img className=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_04.jpg" alt="card image"></p>
-                                        <h4 className="card-title">Sunlimetech</h4>
-                                        <p className="card-text">This is basic card with image on top, title, description and button.</p>
-                                        <a href="#" className="btn btn-primary btn-sm"><i className="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="backside">
-                                <div className="card">
-                                    <div className="card-body text-center mt-4">
-                                        <h4 className="card-title">Sunlimetech</h4>
-                                        <p className="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                        <ul className="list-inline">
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-skype"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-google"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             
-             
-                <div className="col-xs-12 col-sm-6 col-md-4">
-                    <div className="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div className="mainflip">
-                            <div className="frontside">
-                                <div className="card">
-                                    <div className="card-body text-center">
-                                        <p><img className=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_05.png" alt="card image"></p>
-                                        <h4 className="card-title">Sunlimetech</h4>
-                                        <p className="card-text">This is basic card with image on top, title, description and button.</p>
-                                        <a href="#" className="btn btn-primary btn-sm"><i className="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="backside">
-                                <div className="card">
-                                    <div className="card-body text-center mt-4">
-                                        <h4 className="card-title">Sunlimetech</h4>
-                                        <p className="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                        <ul className="list-inline">
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-skype"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-google"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             
-             
-                <div className="col-xs-12 col-sm-6 col-md-4">
-                    <div className="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div className="mainflip">
-                            <div className="frontside">
-                                <div className="card">
-                                    <div className="card-body text-center">
-                                        <p><img className=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_06.jpg" alt="card image"></p>
-                                        <h4 className="card-title">Sunlimetech</h4>
-                                        <p className="card-text">This is basic card with image on top, title, description and button.</p>
-                                        <a href="#" className="btn btn-primary btn-sm"><i className="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="backside">
-                                <div className="card">
-                                    <div className="card-body text-center mt-4">
-                                        <h4 className="card-title">Sunlimetech</h4>
-                                        <p className="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                        <ul className="list-inline">
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-skype"></i>
-                                                </a>
-                                            </li>
-                                            <li className="list-inline-item">
-                                                <a className="social-icon text-xs-center" target="_blank" href="#">
-                                                    <i className="fa fa-google"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-</div>
-    )
-}}
     
+  render () {
+      
+    return (
+<div> 
+    {/* <video autoPlay muted loop id="myVideo">
+    <source src="header.mp4" type="video/mp4"/> </video>
+    <div className="content"> */}
+
+
+        {/* <header className="v-header"> */}
+            {/* <div className="fullscreen-video-wrap">
+            <video src="" autoplay="true"
+            loop="true"></video>
+            </div> */}
+            {/* <div className="header-overlay"></div>
+            <div className="header-content"> */}
+              {/* <video autoPlay muted loop id="myVideo"> */}
+    {/* <source src="header.mp4" type="video/mp4"/> </video> */}
+    {/* <div className="content"> */}
+    <div>
+        <main className="cover-page" id="headerbg">
+          <section className="wrapped-page">
+            <div className="item-center">
+              <h1>Taking an Image, Freezing a Moment,</h1>
+              <br></br>
+              <h3>Reveals How Rich Reality Truly Is </h3>
+               <Button variant="dark" href = 'https://w3docs.com' >Tell Me More </Button>
+            </div>
+          </section>
+        </main>
+      </div>
+      
+<CardGroup>
+  <Card>
+    <Card.Img variant="top" src="/first.jpg/100px160" />
+    <Card.Body>
+      <Card.Title>Photographer Information</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+      <Button variant="primary">Go somewhere</Button>
+    </Card.Footer>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Body>
+      <Card.Title>Photographer Information</Card.Title>
+      <Card.Text>
+        This card has supporting text below as a natural lead-in to additional
+        content.{' '}
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+      <Button variant="primary">Go somewhere</Button>
+    </Card.Footer>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    
+    <Card.Body>
+      <Card.Title>Photographer Information</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This card has even longer content than the first to
+        show that equal height action.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+      <Button variant="primary">Go somewhere</Button>
+    </Card.Footer>
+  </Card>
+</CardGroup>
+
+
+
+
+ </div>
+          
+        )}}
+
+
+// <h1>Taking an image, freezing a moment,<br/><br/>reveals how rich reality truly is</h1>
 
 
 export default HomePage;

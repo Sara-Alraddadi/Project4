@@ -2,21 +2,6 @@ import "./photographerProfile.css";
 import React, { Component } from "react";
 
 class PhotographerProfile extends Component{
-  // axios.get(user)
-    //decode for the user token =>user id
-  //send request
-  // from response return name and map on images 
-
-  // componentDidMount(){
-
-  //   axios.get('http://routes/user/'+)
-  //   .then(res => {
-
-  //   })
-  //   .catch()
-  // }
-
-
 
 
   render(){

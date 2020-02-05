@@ -1,14 +1,16 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import './postAndOffers.css';
+import './ViewPost.css';
+import {Button} from 'react-bootstrap';
+import { MDBBtn } from 'mdbreact';
 
 
-class PostAndOffers extends Component{
+class ViewPost extends Component{
     render(){
         return(
             <div>
                
-                <div className="content1">
+                <div className="content1 mb-4 mt-4">
                     <h2 id = "header">Title</h2> 
                     <hr/><br/>
                     
@@ -27,25 +29,23 @@ class PostAndOffers extends Component{
                     <br/>
                     <p className="subheaders">Description:</p>
                     <p className ="text">Changing the link color when the visitor hovers over a link helps indicate what is clickable on your web page or blog. To make your pages link color change implement the below code into your portion of your HTML or in your CSS code for your web page.Changing the link color when the visitor hovers over a link helps indicate what is clickable on your web page or blog. To make your pages link color change implement the below code into your portion of your HTML or in your CSS code for your web page.</p>
+
+                    <hr className="style14"></hr><br/>
+                    <p className="subheaders">Location:</p>
+                    <p className ="text">Jeddah</p>
+                    <div className="text-center">
+                        <MDBBtn className="btn-black mb-4">Accept Job</MDBBtn>
+                     </div>
+
+
             
                 </div>
 
-                <div className="card">
-                    <div className="card-header">
-                    Offer
-                    </div>
-                        <div className="card-body">
-                        <h5 className="card-title">Photographer Name</h5>
-                        <p className="card-text"><span id = "thickfont">Delevired On:</span> 12/ 03/ 2020</p>
-                        <p className="card-text"><span id = "thickfont">Price:</span> 50 <b> $</b></p>
-                        <p className="card-text"><span id = "thickfont">Details:</span> With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" className="button instagram"><span className="gradient"></span>Accept Offer</a>
-                    </div>
-                </div> 
+               
 
             </div>
         )
     }
 }
 
-export default PostAndOffers;
+export default ViewPost;

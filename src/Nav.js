@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StickyContainer, Sticky } from 'react-sticky';
+// import { StickyContainer, Sticky } from 'react-sticky';
 import './nav.css';
  import axios from "axios";
 // import Logout from './Logout';

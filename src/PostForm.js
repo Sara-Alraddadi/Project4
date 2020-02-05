@@ -11,7 +11,8 @@ class PostForm extends Component{
   <MDBRow>
     <MDBCol>
       <form>
-      <p className="h5 text-center mb-4 mt-4"></p>
+        
+      <p className="h5 text-center mb-4 mt-4">Creat Post</p>
         <div className="grey-text">
             <MDBInput label="Title" icon="tag" group type="text" validate error="wrong" success="right" />
             <MDBInputGroup

@@ -16,12 +16,18 @@ const FormPage = () => {
                 error="wrong" success="right" />
               <MDBInput label="Your password" icon="lock" group type="password" validate />
               <p className="mb-0">Register As:</p>
-                <MDBInput gap  type="radio"
-                  id="radio1" /> label="User"
-               <MDBInput gap  label="Photographer" type="radio"
-                 id="radio2" />
-                <br></br>
-                <p className="mb-0">Attache Images:</p>
+                <div className="radio">
+                  <label>
+                    <input type="radio" value="User" className="mr-2" />
+                    User
+                  </label>
+                </div>
+                <div className="radio">
+                  <label>
+                    <input type="radio" value="Photographer" className="mr-2" />
+                    Photographer
+                  </label>
+                </div>
         <MDBInputGroup
           prepend="Upload"
           inputs={
@@ -50,3 +56,4 @@ const FormPage = () => {
   );
 };
 export default FormPage;
+

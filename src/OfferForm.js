@@ -8,7 +8,7 @@ class OfferForm extends Component{
   <MDBRow>
     <MDBCol>
       <form>
-      <p className="h5 text-center mb-4 mt-4"></p>
+      <p className="h5 text-center mb-4 mt-4"> Create Offer</p>
         <div className="grey-text">
         <MDBInputGroup containerClassName="mb-3" label="Price" prepend="$" append=".00" />
         <MDBInput type="textarea" rows="1" label="Details" icon="pencil-alt" />

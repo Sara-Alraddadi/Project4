@@ -1,40 +1,64 @@
-import React, {Component} from 'react';
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import React, {Component} from 'react'
+import { Container, Row, Col } from "reactstrap";
+import { ReactComponent as Facebook } from "./facebook.svg";
+import { ReactComponent as Twitter } from "./twitter.svg";
+import { ReactComponent as Linkedin } from "./linkedin.svg";
+import { ReactComponent as Instagram } from "./instagram.svg";
+import './Footer.css';
 
-const Footer = () => {
+
+class Footer extends Component {
+render(){
   return (
-    <MDBFooter color="black" className="font-small pt-4 mt-4">
-      <MDBContainer fluid className="text-center text-md-left">
-        <MDBRow>
-          <MDBCol md="6">
-            <h5 className="title">Caputre The Moment</h5>
+   <div className="footer">
+
+          <header className="headerTitle text-center">
+            <br></br>
             <p>
-              Phone:009659994422
+              <h3>CAPTURE THE MOMENT!</h3>
+              <b>CAN'T WAIT TO GET INVOLVED CONNECT WITH US NOW</b>
+              
+              
             </p>
-          </MDBCol>
-          <MDBCol md="6">
-            <h5 className="title">More Info</h5>
-            <ul>
-              <li className="list-unstyled">
-                <a href="#!">Facebook</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Instagram</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Twitter</a>
-              </li>
-            </ul>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
-      <div className="footer-copyright text-center py-3">
-        <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com"> Moment@Caputre.com </a>
-        </MDBContainer>
+          </header>
+          <footer className="svg-group text-center">
+            <Row>
+              <Col md="3" xs="6">
+                <div>
+                  <a href="#">
+                    <Facebook width="35" height="35" strokeWidth="1" />
+                  </a>
+                </div>
+              </Col>
+              <Col md="3" xs="6">
+                <div>
+                  <a href="#">
+                    <Twitter width="35" height="35" strokeWidth="1" />
+                  </a>
+                </div>
+              </Col>
+              <Col md="3" xs="6">
+                <div>
+                  <a href="#">
+                    <Linkedin width="35" height="35" strokeWidth="1" />
+                  </a>
+                </div>
+              </Col>
+              <Col md="3" xs="6">
+                <div>
+                  <a href="#">
+                    <Instagram width="35" height="35" strokeWidth="1" />
+                  </a>
+                </div>
+              </Col>
+            </Row>
+            <hr/>
+            <p>copyright 2020 | Lilghosts Team</p>
+          </footer>
       </div>
-    </MDBFooter>
+
+
   );
 }
-
+}
 export default Footer;

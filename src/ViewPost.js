@@ -10,7 +10,7 @@ class ViewPost extends Component{
         return(
             <div>
                
-                <div className="content1">
+                <div className="content1 mb-4 mt-4">
                     <h2 id = "header">Title</h2> 
                     <hr/><br/>
                     
@@ -33,8 +33,6 @@ class ViewPost extends Component{
                     <hr className="style14"></hr><br/>
                     <p className="subheaders">Location:</p>
                     <p className ="text">Jeddah</p>
-
-                    {/* <button className="m1 btn-black">Accept Job</button> */}
                     <div className="text-center">
                         <MDBBtn className="btn-black mb-4">Accept Job</MDBBtn>
                      </div>

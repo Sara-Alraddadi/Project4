@@ -1,4 +1,4 @@
-import React, {Component} from  'react';
+import React, {Component} from 'react';
 import PhotographerProfile from './PhotographerProfile.js';
 import './App.css';
 import Signup from './SignUp';
@@ -16,23 +16,27 @@ import ViewPost from './ViewPost';
 import PostAndOffers from './PostAndOffers';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import jwt_decode from 'jwt-decode'
 import ReactDOM from "react-dom";
-import Slider from './Slider';
 import About from './About';
 // import { BrowserRouter, Route} from 'react-router-dom';
 
 
 class App extends Component {
+
+  componentDidMount(){ 
+
+    // var userInfo = jwt_decode(localStorage.token)
+    // console.log(userInfo)
+  }
   render(){
+
+
  return ( 
       <div>
-      <Nav></Nav>
-      {/* <UserHome/> */}
-      {/* <PostAndOffers/> */}
-     <PhotographyHome/> 
-      <ViewPost/>  
+      <Nav/>
+      <PhotographyHome/>
       <About/>
-      <Slider/>
       <Footer/>
     <Router>
       <div>
@@ -46,7 +50,6 @@ class App extends Component {
         <Route path="/PostUser" component={PostUser} />
         <Route path="/OfferPhoto" component={OfferPhoto} />
       </div>
-     
     </Router>
     </div>
  )}

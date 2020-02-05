@@ -11,12 +11,11 @@ class PhotographyHome extends Component{
         <main className="cover-page" id="headerbg">
           <section className="wrapped-page">
             <div className="item-center">
-              <h1>A good photograph is knowing where to stand.</h1>
-               <Button variant="dark">Tell Me More </Button>
+              <h1>Today's Moments are Tomorrow's Memories.</h1>
+               <Button variant="dark" href="#about">Know More!</Button>
             </div>
           </section>
         </main>
-      <br></br>
 
        <Card style={{ width: '18rem' }}>
 				<Card.Header>Title</Card.Header>

@@ -8,21 +8,6 @@ class UserHome extends Component{
       
     return (
 <div> 
-    {/* <video autoPlay muted loop id="myVideo">
-    <source src="header.mp4" type="video/mp4"/> </video>
-    <div className="content"> */}
-
-
-        {/* <header className="v-header"> */}
-            {/* <div className="fullscreen-video-wrap">
-            <video src="" autoplay="true"
-            loop="true"></video>
-            </div> */}
-            {/* <div className="header-overlay"></div>
-            <div className="header-content"> */}
-              {/* <video autoPlay muted loop id="myVideo"> */}
-    {/* <source src="header.mp4" type="video/mp4"/> </video> */}
-    {/* <div className="content"> */}
     <div>
         <main className="cover-page" id="headerbg">
           <section className="wrapped-page">
@@ -30,7 +15,7 @@ class UserHome extends Component{
               <h1>Taking an Image, Freezing a Moment,</h1>
               <br></br>
               <h3>Reveals How Rich Reality Truly Is </h3>
-               <Button variant="dark" href = 'https://w3docs.com' >Tell Me More </Button>
+               <Button variant="dark" href="#about">Know More!</Button>
             </div>
           </section>
         </main>
@@ -83,15 +68,11 @@ class UserHome extends Component{
   </Card>
 </CardGroup>
 
-
-
-
  </div>
           
-        )}}
-
-
-// <h1>Taking an image, freezing a moment,<br/><br/>reveals how rich reality truly is</h1>
+        )
+      }
+    }
 
 
 export default UserHome;

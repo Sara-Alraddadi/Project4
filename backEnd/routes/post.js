@@ -50,4 +50,10 @@ router.post('/addOffer', (req, res) => {
 
 })
 
+router.get('/allPost/:id' , (req , res)=>{
+
+    User.findById(req.params.id).populate('posts')
+    .then(user => res.json({posts:user.posts}))
+    .catch(err => res.send(err))
+})
 module.exports = router;

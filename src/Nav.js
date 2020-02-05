@@ -1,37 +1,49 @@
 import React, {Component} from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom'; 
+// import { StickyContainer, Sticky } from 'react-sticky';
 import './nav.css';
+ import axios from "axios";
+// import Logout from './Logout';
+import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
+import { Redirect , withRouter } from 'react-router-dom';
 
-class Nav extends Component {
+
+class Nav extends Component{
+  state = {
+    navigate: false
+}
+    logout = () => {
+        localStorage.clear('token')
+        this.props.history.push('/')
+    }
   render () {
+    const { navigate } = this.state;
+            if(navigate){
+                return <Redirect to = '/' push={true}/>
+            }
     return (
        <div>
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">Photography</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <nav sticky="top" className="navbar navbar-expand-lg navbar-dark ">
+          <a className="navbar-brand" href="#">Photography</a>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="/PhotographerProfile">PhotographerProfile</a>
-              <a class="nav-item nav-link" href="/PostAndOffers">PostAndOffers</a>
-              <a class="nav-item nav-link" href="/PostForm">PostForm</a>
-              <a class="nav-item nav-link" href="/LoOfferFormgin">LoOfferFormgin</a>
-              <a class="nav-item nav-link" href="/PostUser">PostUser</a>
-              <a class="nav-item nav-link" href="/OfferPhoto">OfferPhoto</a>
-              <a class="nav-item nav-link" href="/Login">Login</a>
-              <a class="nav-item nav-link" href="/Signup">Signup</a>
-            </div>
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <a className="nav-item nav-link active" href="/">Home <span className="sr-only">(current)</span></a>
+              <a className="nav-item nav-link" href="/PhotographerProfile">PhotographerProfile</a>
+              <a className="nav-item nav-link" href="/PostAndOffers">PostAndOffers</a>
+              <a className="nav-item nav-link" href="/PostForm">PostForm</a>
+              <a className="nav-item nav-link" href="/LoOfferFormgin">Create Offer</a>
+              <a className="nav-item nav-link" href="/PostUser">PostUser</a>
+              <a className="nav-item nav-link" href="/OfferPhoto">OfferPhoto</a>
+              <a className="nav-item nav-link" href="/Login">Login</a>
+              <a className="nav-item nav-link" href="/Signup">Signup</a>
+              <a onClick={this.logout} className="nav-item nav-link">Logout</a>
+                </div>
             </div>
         </nav>
-  
        </div>
         
       )}}
   
-  export default Nav;
+  export default withRouter(Nav);

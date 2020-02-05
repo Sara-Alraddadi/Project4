@@ -10,15 +10,14 @@ import Login from './Login';
 import Home from './Home';
 import PhotographyHome from './PhotographyHome';
 import Nav from './Nav';
-import UserHome from './UserHome';
-import Footer from './Footer';
-import ViewPost from './ViewPost';
+import Logout from './Logout';
 import PostAndOffers from './PostAndOffers';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import jwt_decode from 'jwt-decode'
 import ReactDOM from "react-dom";
 import About from './About';
+import Footer from './Footer';
 // import { BrowserRouter, Route} from 'react-router-dom';
 
 
@@ -33,25 +32,32 @@ class App extends Component {
 
 
  return ( 
+   <Router>
       <div>
       <Nav/>
-      <PhotographyHome/>
+      {/* <PhotographyHome/> */}
+      <Home/>
+      {/* <OfferForm/> */}
       <About/>
       <Footer/>
-    <Router>
+     
+  
       <div>
-        <Route exact path="/" component={Home} />
+        {/* <Route exact path="/" component={Home} /> */}
         <Route path="/PhotographerProfile" component={PhotographerProfile} />
         <Route path="/Login" component={Login} />
         <Route path="/Signup" component={Signup} />
+        <Route path="/Logout" component={Logout} />
         <Route path="/PostAndOffers" component={PostAndOffers} />
         <Route path="/PostForm" component={PostForm} />
         <Route path="/LoOfferFormgin" component={OfferForm} />
         <Route path="/PostUser" component={PostUser} />
         <Route path="/OfferPhoto" component={OfferPhoto} />
       </div>
-    </Router>
+     
+  
     </div>
+    </Router>
  )}
 }  
   export default App;

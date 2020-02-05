@@ -38,11 +38,11 @@ class PostUser extends Component {
 
 
 			return <Card style={{ width: '18rem' }}>
-				<Card.Header>My Posts</Card.Header>
+				<Card.Header>My Post</Card.Header>
 				<ListGroup>
-					<ListGroup.Item>{ele.title}</ListGroup.Item>
-					<ListGroup.Item>{ele.deadline}</ListGroup.Item>
-					<ListGroup.Item>{ele.price}</ListGroup.Item>
+					<ListGroup.Item>Title: {ele.title}</ListGroup.Item>
+					<ListGroup.Item>DeadLine: {ele.deadline}</ListGroup.Item>
+					<ListGroup.Item>Price: {ele.price}</ListGroup.Item>
 					<Button onClick={this.onSubmitHandler}>View</Button>
 				</ListGroup>
 			</Card>

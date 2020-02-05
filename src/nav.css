@@ -1,6 +1,14 @@
 nav{
     margin-bottom: 30px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
 }
-.navbar {
+.navbar{
+    z-index: 1;
     margin-bottom: 0;
+}
+.mb{
+   padding:1px;
 }

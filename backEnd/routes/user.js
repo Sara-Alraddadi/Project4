@@ -56,7 +56,7 @@ router.post('/login', (req, res) => {
                     var paylod = { user }
                     let token = jwt.sign(paylod, "secret", { expiresIn: 1440 })
                     // res.send(paylod)
-                    res.json({token: token, success: true})
+                    res.json({msg: "Logged in succefully", token: token, success: true})
                 }
                 
                 //    if password not the same 

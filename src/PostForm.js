@@ -1,13 +1,43 @@
 import React, {Component} from 'react';
+import axios from "axios";
+import jwt_decode from 'jwt-decode'
 import { Row, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 class PostForm extends Component{
+
+  state = {
+    id : jwt_decode(localStorage.token).user._id
+
+  }
+
+  onChangeHandler = (e) => { 
+    console.log(this.state.id)
+      this.setState({
+          [e.target.name]: e.target.value //to set the users name => input value(title, EventType,Description, Location,DeadLine)
+      })
+  }
+
+  onSubmitHandler = () => {
+
+      axios.post('http://localhost:5000/post/createpost', this.state)//state = obj
+      .then(res => {
+          console.log(res.data.msg)
+          if (res.data.msg == "post created"){
+
+              this.props.history.push('/PostUser')
+          }
+          
+      })
+      .catch( err => console.log(err))
+
+  }
   render () {
+    console.log(this.state)
     return (
 <Form>
       <FormGroup>
         <Label for="examplePassword">Title</Label>
-        <Input type="textarea" name="password" id="examplePassword"  />
+        <Input onChange = {this.onChangeHandler} name= "title" type="textarea"  id="examplePassword"  />
       </FormGroup>
 
 
@@ -15,7 +45,7 @@ class PostForm extends Component{
       <FormGroup>
      
         <Label for="exampleSelect">Event Type</Label>
-        <Input type="select" name="select" id="exampleSelect">
+        <Input onChange = {this.onChangeHandler} name="eventType" type="select" id="exampleSelect">
         
           <option>Birthday Party </option>
           <option>Widding</option>
@@ -27,20 +57,20 @@ class PostForm extends Component{
       
       <FormGroup>
         <Label for="exampleText">Description</Label>
-        <Input type="textarea" name="text" id="exampleText" />
+        <Input onChange = {this.onChangeHandler} type="textarea" name="description" id="exampleText" />
       </FormGroup>
 
       <FormGroup>
         <Label for="exampleText">Location</Label>
-        <Input type="textarea" name="text" id="exampleText" />
+        <Input onChange = {this.onChangeHandler} type="textarea" name="location" id="exampleText" />
       </FormGroup>
 
       <FormGroup>
         <Label for="exampleText">Deadline</Label>
-        <Input type="date" name="date" id="exampleText" />
+        <Input onChange = {this.onChangeHandler} type="date" name="date" id="exampleText" />
       </FormGroup>
   
-      <Button>Add Post</Button>
+      <Button onClick={this.onSubmitHandler}>Add Post</Button>
     </Form>
 
 )

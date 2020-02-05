@@ -3,7 +3,11 @@ nav{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    background: rgba(0, 0, 0, 0.5);
 }
 .navbar{
     z-index: 1;
+}
+.mb{
+   padding:1px;
 }

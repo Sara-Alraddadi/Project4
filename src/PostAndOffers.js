@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import './postAndOffers.css';
+import './PostAndOffers.css';
 
 
 class PostAndOffers extends Component{

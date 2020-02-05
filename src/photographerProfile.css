@@ -7,12 +7,19 @@
 
 p{
 font-family: 'Montserrat', sans-serif;
-/*letter-spacing: 1.5px;*/
-text-align: left;
 }
 
 .info{
   padding-left: 15px;
+}
+
+.style14 { 
+  width: 450px;
+  margin: auto;
+border: 0; 
+height: 1px; 
+/* background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); */
+
 }
 
 .header{
@@ -87,4 +94,10 @@ div.desc {
   .responsive {
     width: 100%;
   }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }

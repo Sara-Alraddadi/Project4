@@ -1,4 +1,4 @@
-import React, {Component} from  'react';
+import React, {Component} from 'react';
 import PhotographerProfile from './PhotographerProfile.js';
 import './App.css';
 import Signup from './SignUp';
@@ -12,15 +12,25 @@ import Nav from './Nav';
 import PostAndOffers from './PostAndOffers';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import jwt_decode from 'jwt-decode'
 import ReactDOM from "react-dom";
 // import { BrowserRouter, Route} from 'react-router-dom';
 
 
 class App extends Component {
+
+  componentDidMount(){ 
+
+    // var userInfo = jwt_decode(localStorage.token)
+    // console.log(userInfo)
+  }
   render(){
+
+
  return ( 
       <div>
       <Nav></Nav>
+
     <Router>
       <div>
         <Route exact path="/" component={Home} />

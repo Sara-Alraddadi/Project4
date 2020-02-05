@@ -4,7 +4,7 @@ import React, { Component } from "react";
 class PhotographerProfile extends Component{
   // axios.get(user)
     //decode for the user token =>user id
-    //send request
+  //send request
   // from response return name and map on images 
 
   // componentDidMount(){
@@ -25,9 +25,12 @@ class PhotographerProfile extends Component{
 <div className="content">
 
   <p>Photographer Name</p>
+  
 
   <div className="info">Also, I'd be honored if you hit the "Share" button at the bottom right corner too and helped spread the word. Our dream is for this post to help as many designers as we possibly can. Your help in spreading this to more designers is greatly, and warmly, appreciated.</div>
-
+  <div>
+  <hr className="style14 clearfix"/><br/>
+  </div>
 <div className="responsive">
   <div className="gallery">
     <a target="_blank" href="https://images.unsplash.com/photo-1580596090683-f4711170117b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80">

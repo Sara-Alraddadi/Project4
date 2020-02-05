@@ -1,0 +1,32 @@
+import React, { Component } from 'react'
+import { Card, ListGroup } from 'react-bootstrap'
+import { MDBBtn } from 'mdbreact'
+import {withRouter} from 'react-router-dom'
+class cardUser extends Component {
+
+
+    render() {
+
+        const { first_name, last_name, email  , _id} = this.props.user
+        return (
+
+
+
+            <Card style={{ width: '18rem' }}>
+                <Card.Header>User Info</Card.Header>
+                <ListGroup>
+                    <ListGroup.Item>{first_name}</ListGroup.Item>
+                    <ListGroup.Item>{last_name}</ListGroup.Item>
+                    <ListGroup.Item>{email}</ListGroup.Item>
+                    <MDBBtn  onClick={() => this.props.history.push(`/PhotographerProfile/${_id}`)} className="btn-black mb-4">View</MDBBtn>
+                </ListGroup>
+            </Card>
+
+
+
+        )
+    }
+}
+
+
+export default withRouter(cardUser)

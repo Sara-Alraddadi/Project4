@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Card, ListGroup, Button } from 'react-bootstrap';
 import axios from 'axios'
-import jwt_decode from 'jwt-decode'
+import './postAndOffers.css';
+import jwt_decode from 'jwt-decode';
 class PostUser extends Component {
 	state = {
 		cards: []
@@ -43,7 +44,7 @@ class PostUser extends Component {
 					<ListGroup.Item>{ele.title}</ListGroup.Item>
 					<ListGroup.Item>{ele.deadline}</ListGroup.Item>
 					<ListGroup.Item>{ele.price}</ListGroup.Item>
-					<Button onClick={this.onSubmitHandler}>View</Button>
+					<Button className="instagram" onClick={this.onSubmitHandler}>View</Button>
 				</ListGroup>
 			</Card>
 		})

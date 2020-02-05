@@ -34,7 +34,7 @@ class App extends Component {
     <Router>
       <div>
         <Route exact path="/" component={Home} />
-        <Route path="/PhotographerProfile" component={PhotographerProfile} />
+        <Route path="/PhotographerProfile/:id" render={(props)=> <PhotographerProfile {...props} />} />
         <Route path="/Login" component={Login} />
         <Route path="/Signup" component={Signup} />
         <Route path="/PostAndOffers" component={PostAndOffers} />

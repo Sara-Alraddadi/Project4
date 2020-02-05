@@ -15,11 +15,11 @@ class App extends Component {
   render(){
  return (
     <div>
-   {/* <Signup/> */}
-   <PostForm/> 
-   {/* <OfferForm/> */}
-   {/* <PostUser/> */}
-  {/* <OfferPhoto/> */}
+   <Signup/>
+   <PostForm/>  
+   <OfferForm/>
+   <PostUser/>
+   {/* <OfferPhoto/> */}
     </div>
  )}
 }  

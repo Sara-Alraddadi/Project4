@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
-
-import { MDBContainer,MDBInputGroup,MDBDatePicker,MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
+import { MDBContainer,MDBInputGroup, MDBDatePicker,  MDBRow, MDBCol, MDBInput, MDBBtn }  from 'mdbreact';
 import './PostForm.css';
 class PostForm extends Component{
+  getPickerValue = (value) => {
+    console.log(value);
+  }
   render () {
     return (
-
 <MDBContainer className="container">
   <MDBRow>
-    <MDBCol md="6">
+    <MDBCol>
       <form>
       <p className="h5 text-center mb-4 mt-4"></p>
-            <div className="grey-text">
+        <div className="grey-text">
             <MDBInput label="Title" icon="tag" group type="text" validate error="wrong" success="right" />
             <MDBInputGroup
           containerClassName="mb-3"
@@ -26,9 +26,10 @@ class PostForm extends Component{
             </select>
           }
         />
-            <MDBInput type="textarea" rows="2" label="Description" icon="pencil-alt" />
+            <MDBInput type="textarea" rows="1" label="Description" icon="pencil-alt" />
             <MDBInputGroup
           containerClassName="mb-3"
+          label="Location"
           prepend="Location"
           inputs={
             <select className="browser-default custom-select">
@@ -39,28 +40,18 @@ class PostForm extends Component{
             </select>
           }
         />
-            
-            <MDBInput type="date" label="Deadline" icon=""/>
-            <div>
-        {/* <MDBDatePicker getValue={this.getPickerValue} /> */}
-      </div>
+            <label className="mb-0"> Deadline </label>
+            <MDBInput type="date" icon=""/>
+            {/* <MDBDatePicker getValue={this.getPickerValue} /> */}
+            <MDBInputGroup containerClassName="mb-3" label="Price" prepend="$" append=".00" />
         </div>
-
-        {/* <MDBInput type="date" rows="2" label="date" defaultValue="2017-05-24" /> */}
-           
-           
             <div className="text-center">
               <MDBBtn className="btn-black mb-4">Add Post</MDBBtn>
-
-              
             </div>
-           
-                </form>
-     
+      </form>
     </MDBCol>
   </MDBRow>
 </MDBContainer>
-
 )
 }}
 export default PostForm;

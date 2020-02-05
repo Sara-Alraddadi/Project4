@@ -8,12 +8,14 @@ class PostUser extends Component {
 			<Card style={{ width: '18rem' }}>
 				<Card.Header>My Posts</Card.Header>
 				<ListGroup>
-					<ListGroup.Item>ُTitle</ListGroup.Item>
+				<ListGroup.Item>Title</ListGroup.Item>
 					<ListGroup.Item>Deadline</ListGroup.Item>
 					<ListGroup.Item>Status</ListGroup.Item>
 					<Button>View</Button>
 				</ListGroup>
 			</Card>
+
+			
             </div>
 		)
 	}

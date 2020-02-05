@@ -1,44 +1,29 @@
+
 import React, {Component} from 'react';
-import {InputGroup,InputGroupAddon, Button, Form, FormGroup, Label, Input, FormText, } from 'reactstrap';
-
-
+import { MDBContainer,MDBInputGroup,InputGroupAddon,MDBDatePicker,InputGroup,MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
 class OfferForm extends Component{
     render () {
       return (
-<div>
-<Form className=''>
-
-    
-    <InputGroup>
-        <InputGroupAddon addonType="prepend">$</InputGroupAddon>
-        <Input placeholder="Price" min={0} max={100} type="number" step="1" />
-        <InputGroupAddon addonType="append">.00</InputGroupAddon>
-    </InputGroup>
-       
-    <FormGroup>
-        <Label for="exampleText">Details</Label>
-        <Input className="text_box" type="textarea" name="text" id="exampleText" />
-      </FormGroup>
-
-      <FormGroup>
-        <Label for="examplePassword">Photographer Name</Label>
-        <Input className="text_box" type="name" name="name" id="examplePassword" placeholder="name" />
-      </FormGroup>
-      
-
-
-      <FormGroup>
-        <Label for="exampleText">Date</Label>
-        <Input className="text_box" type="date" name="date" id="exampleText" />
-      </FormGroup>
-
-
-      <Button>Send Offer</Button>
-    </Form>
-</div>
-
+        <MDBContainer className="container">
+  <MDBRow>
+    <MDBCol>
+      <form>
+      <p className="h5 text-center mb-4 mt-4"></p>
+        <div className="grey-text">
+        <MDBInputGroup containerClassName="mb-3" label="Price" prepend="$" append=".00" />
+        <MDBInput type="textarea" rows="1" label="Details" icon="pencil-alt" />
+        <label className="m-0"> Date </label>
+          <MDBInput type="date" icon=""/>
+        <MDBInput label="Photographer name" icon="user" group type="text" validate error="wrong"
+                success="right" />
+        </div>
+            <div className="text-center">
+              <MDBBtn className="btn-black mb-4">Send Offer</MDBBtn>
+            </div>
+      </form>
+    </MDBCol>
+  </MDBRow>
+</MDBContainer>
       )
-    
     }}
-
     export default OfferForm;

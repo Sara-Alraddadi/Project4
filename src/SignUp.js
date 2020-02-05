@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Row, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+// import { Row, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 class Signup extends Component{
   render () {
     return (
@@ -38,7 +38,7 @@ class Signup extends Component{
              </div>
 
                 
-                <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
+                <button type="submit" className="btn btn-block">Sign Up</button>
                 <p className="forgot-password text-right">
                     Already registered <a href="#">sign in?</a>
                 </p>

@@ -8,11 +8,17 @@ import PostUser from './PostUser';
 import OfferPhoto from './OfferPhoto';
 import Login from './Login';
 import Home from './Home';
+import PhotographyHome from './PhotographyHome';
 import Nav from './Nav';
+import UserHome from './UserHome';
+import Footer from './Footer';
+import ViewPost from './ViewPost';
 import PostAndOffers from './PostAndOffers';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import ReactDOM from "react-dom";
+import Slider from './Slider';
+import About from './About';
 // import { BrowserRouter, Route} from 'react-router-dom';
 
 
@@ -21,6 +27,13 @@ class App extends Component {
  return ( 
       <div>
       <Nav></Nav>
+      {/* <UserHome/> */}
+      {/* <PostAndOffers/> */}
+     <PhotographyHome/> 
+      <ViewPost/>  
+      <About/>
+      <Slider/>
+      <Footer/>
     <Router>
       <div>
         <Route exact path="/" component={Home} />

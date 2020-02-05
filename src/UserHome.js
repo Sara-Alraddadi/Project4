@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {CardGroup, Card, Button} from 'react-bootstrap';
 import './UserHome.css';
 
-class HomePage extends Component{
+class UserHome extends Component{
     
   render () {
       
@@ -48,7 +48,7 @@ class HomePage extends Component{
     </Card.Body>
     <Card.Footer>
       <small className="text-muted">Last updated 3 mins ago</small>
-      <Button variant="primary">Go somewhere</Button>
+      <Button variant="primary">View</Button>
     </Card.Footer>
   </Card>
   <Card>
@@ -94,4 +94,4 @@ class HomePage extends Component{
 // <h1>Taking an image, freezing a moment,<br/><br/>reveals how rich reality truly is</h1>
 
 
-export default HomePage;
+export default UserHome;

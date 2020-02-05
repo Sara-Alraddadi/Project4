@@ -12,11 +12,11 @@ class About extends Component{
 <div className="row">
 <div className="col-lg-12 text-center">
 <h2 className="section-heading text-uppercase">About Us</h2>
-<h3 className="section-subheading text-muted">No photographer is an island. To keep learning and growing, we believe every photographer needs helpful information and inspirational examples. That’s why we created The Photo Argus to bring you fresh ideas, useful tips and techniques, and a positive community to connect with.
+<h3 className="section-subheading text-muted">Taking photos of our everyday life helps me to embrace imperfection—to see the magic in the messes, joy in the mundane, and humor in the hard things.
 
-The Photo Argus is a resource for all photographers, novice to advanced. Sign up for our weekly newsletter, view our archives, join our community on Flickr, or follow us on Instagram for weekly inspiration. We also give away photography gear every once in a while.
+In photos, the beautiful, messy, imperfect details are what shine. Years from now, it will not be the brand of camera or the settings I chose that will matter to me—it will be the tiny, imperfect details that mean the most.
 
-Do you have a photography project, cool gear, or interesting news to share? We would love to hear about it! Contact us with your idea.</h3>
+A moment captured is worth so much more than a moment forgotten. No matter how imperfect.</h3>
 </div>
 </div>
 </div>

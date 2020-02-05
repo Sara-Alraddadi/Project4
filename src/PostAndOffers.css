@@ -81,6 +81,10 @@
     background: #113c4a;
     transition: all 0.2s ease-out 0s;
   }
+
+  .center1{
+      text-align: center;
+  }
   
   .gradient {
     display: block;

@@ -13,7 +13,7 @@ class cardUser extends Component {
 
 
             <Card style={{ width: '18rem' }}>
-                <Card.Header>User Info</Card.Header>
+                <Card.Header>Photographer Info</Card.Header>
                 <ListGroup>
                     <ListGroup.Item>{first_name}</ListGroup.Item>
                     <ListGroup.Item>{last_name}</ListGroup.Item>

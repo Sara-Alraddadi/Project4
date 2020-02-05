@@ -33,21 +33,26 @@ class PostUser extends Component {
 	}
 
 	render() {
-		// allPost
+		//check if there is any posts
+		if (this.state.cards.length == 0){
+			return <p className='center1'> You haven't created any POSTS yet !</p>
+		}else{
+			// allPost
 		console.log(this.state)
 		var cards = this.state.cards.map(ele => {
 
 
 			return <Card style={{ width: '18rem' }}>
-				<Card.Header>My Posts</Card.Header>
+				<Card.Header>My Post</Card.Header>
 				<ListGroup>
-					<ListGroup.Item>{ele.title}</ListGroup.Item>
-					<ListGroup.Item>{ele.deadline}</ListGroup.Item>
-					<ListGroup.Item>{ele.price}</ListGroup.Item>
-					<Button className="instagram" onClick={this.onSubmitHandler}>View</Button>
+					<ListGroup.Item>Title: {ele.title}</ListGroup.Item>
+					<ListGroup.Item>DeadLine: {ele.deadline}</ListGroup.Item>
+					<ListGroup.Item>Price: {ele.price}</ListGroup.Item>
+					<Button onClick={this.onSubmitHandler}>View</Button>
 				</ListGroup>
 			</Card>
 		})
+	}
 		return (
 
 			<div style ={{display : "flex" , flexWrap : 'wrap'}}>

@@ -35,7 +35,6 @@ The project took 2 weeks to develop.
 
 ## Future additions:
 - Upload Images for Photographer Profile.
-- Home page for Photographer.
 - Photographer will be able to create an offer.
 - Create Live Chat between User and Photographer.
 - Create evaluation for a Photographer.

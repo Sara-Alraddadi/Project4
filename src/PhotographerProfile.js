@@ -1,20 +1,36 @@
 import "./photographerProfile.css";
 import React, { Component } from "react";
-
+import axios from 'axios'
 class PhotographerProfile extends Component{
+  // axios.get(user)
+    //decode for the user token =>user id
+  //send request
+  // from response return name and map on images 
+  state ={
 
+  }
+
+  componentDidMount(){
+
+    axios.get('http://localhost:5000/user/'+this.props.match.params.id)
+    .then(res => this.setState({user : res.data}))
+    .catch(err => console.log(err))
+  }
+
+  
 
   render(){
+console.log(this.state)
     return(
       
 <div className="content">
 
-  <p>Photographer Name</p>
+  <p>{this.state.user &&  this.state.user.first_name + " "   + this.state.user.last_name}</p>
   
 
   <div className="info">Also, I'd be honored if you hit the "Share" button at the bottom right corner too and helped spread the word. Our dream is for this post to help as many designers as we possibly can. Your help in spreading this to more designers is greatly, and warmly, appreciated.</div>
   <div>
-  <hr className="style14 clearfix"/><br/>
+  {/* <hr className="style14 clearfix"/><br/> */}
   </div>
 <div className="responsive">
   <div className="gallery">

@@ -69,6 +69,22 @@ router.post('/login', (req, res) => {
             }
         }).catch(err => res.send(err))
 })
+//get one user 
+
+
+router.get('/all' , (req, res) =>{
+
+    User.find({
+        userType :"photographer"
+    }).then(users => res.json(users))
+    .catch(err => res.json(err))
+})
+router.get('/:id' , (req, res) =>{
+
+    User.findById(req.params.id)
+    .then(user => res.json(user))
+    .catch(err => res.json(err))
+})
 module.exports = router;
 
 

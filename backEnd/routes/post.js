@@ -56,4 +56,11 @@ router.get('/allPost/:id' , (req , res)=>{
     .then(user => res.json({posts:user.posts}))
     .catch(err => res.send(err))
 })
+router.get('/allUserPost' , (req, res) =>{
+
+    Post.find({
+        
+    }).then(users => res.json(users))
+    .catch(err => res.json(err))
+})
 module.exports = router;

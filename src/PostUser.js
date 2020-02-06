@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Card, ListGroup, Button } from 'react-bootstrap';
 import axios from 'axios'
-import jwt_decode from 'jwt-decode'
+import './PostAndOffers.css';
+import jwt_decode from 'jwt-decode';
 class PostUser extends Component {
 	state = {
 		cards: []
@@ -32,7 +33,11 @@ class PostUser extends Component {
 	}
 
 	render() {
-		// allPost
+		//check if there is any posts
+		if (this.state.cards.length == 0){
+			return <p className='center1'> You haven't created any POSTS yet !</p>
+		}else{
+			// allPost
 		console.log(this.state)
 		var cards = this.state.cards.map(ele => {
 
@@ -47,6 +52,7 @@ class PostUser extends Component {
 				</ListGroup>
 			</Card>
 		})
+	}
 		return (
 
 			<div style ={{display : "flex" , flexWrap : 'wrap'}}>

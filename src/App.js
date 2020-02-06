@@ -36,15 +36,16 @@ class App extends Component {
       <div>
       <Nav/>
       {/* <PhotographyHome/> */}
-      <Home/>
+     
       {/* <OfferForm/> */}
-      <About/>
-      <Footer/>
+
+      
      
   
       <div>
-        {/* <Route exact path="/" component={Home} /> */}
-        <Route path="/PhotographerProfile" component={PhotographerProfile} />
+        <Route exact path="/" component={Home} /> 
+        {/* <Route path="/PhotographerProfile" component={PhotographerProfile} /> */}
+        <Route path="/PhotographerProfile/:id" render={(props)=> <PhotographerProfile {...props} />} />
         <Route path="/Login" component={Login} />
         <Route path="/Signup" component={Signup} />
         <Route path="/Logout" component={Logout} />
@@ -52,14 +53,13 @@ class App extends Component {
         <Route path="/PostForm" component={PostForm} />
         <Route path="/LoOfferFormgin" component={OfferForm} />
         <Route path="/PostUser" component={PostUser} />
-        <Route path="/OfferPhoto" component={OfferPhoto} />
+        {/* <Route path="/OfferPhoto" component={OfferPhoto} /> */}
       </div>
      
+      <Footer/>
   
     </div>
     </Router>
  )}
 }  
   export default App;
-  
-  

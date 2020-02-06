@@ -47,5 +47,4 @@ class ViewPost extends Component{
         )
     }
 }
-
 export default ViewPost;

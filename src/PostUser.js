@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, ListGroup, Button } from 'react-bootstrap';
 import axios from 'axios'
-import './postAndOffers.css';
+import './PostAndOffers.css';
 import jwt_decode from 'jwt-decode';
 class PostUser extends Component {
 	state = {

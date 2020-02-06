@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Card, ListGroup } from 'react-bootstrap'
 import { MDBBtn } from 'mdbreact'
 import {withRouter} from 'react-router-dom'
+import './cardUser.css'
+
 class cardUser extends Component {
 
 
@@ -12,7 +14,7 @@ class cardUser extends Component {
 
 
 
-            <Card style={{ width: '18rem' }}>
+            <Card className='mb-4 mt-4 top' style={{ width: '18rem'}}>
                 <Card.Header>Photographer Info</Card.Header>
                 <ListGroup>
                     <ListGroup.Item>{first_name}</ListGroup.Item>

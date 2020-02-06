@@ -10,7 +10,9 @@ import sample from './headerv.mp4';
 import './home.css';
 import {Button} from 'react-bootstrap';
 import jwt_decode from 'jwt-decode'
+import About from './About';
 import { Redirect, withRouter } from 'react-router-dom';
+import {  MDBBtn } from 'mdbreact';
 
 
 class Home extends Component {
@@ -112,17 +114,17 @@ class Home extends Component {
             <div >
 
             <div>
-
             <video variant="dark" className='videoTag' autoPlay loop muted>
             <source src={sample} type='video/mp4' />
             </video>
            
             <h1 id ="quoat">Taking an image, freezing a moment,<br/><br/>reveals how rich reality truly is</h1>
-           
+            <Button id ="homebtn" variant="dark" href="#about">Know More!</Button>
+
             </div>
 
-            <div style ={{marginTop : "400px"}}>
-                test
+            <div style ={{marginTop : "0px"}}>
+               
                 {/* <ViewPost /> */}
                 {/* <PostUser /> */}
                 <Container fluid>
@@ -131,6 +133,7 @@ class Home extends Component {
                     </Row>
                 </Container>
             </div>
+            <About/>
             </div>
         )
     }

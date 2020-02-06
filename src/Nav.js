@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { StickyContainer, Sticky } from 'react-sticky';
+import React, {Component} from 'react';
+// import { StickyContainer, Sticky } from 'react-sticky';
 import './nav.css';
 import axios from "axios";
 // import Logout from './Logout';
@@ -52,15 +52,13 @@ class Nav extends Component {
                   <a className="nav-item nav-link" href="/PostForm">PostForm</a>
                   <a className="nav-item nav-link" href="/LoOfferFormgin">Create Offer</a>
                   <a className="nav-item nav-link" href="/PostUser">PostUser</a>
-                  <a className="nav-item nav-link" href="/OfferPhoto">OfferPhoto</a>
+                  {/* <a className="nav-item nav-link" href="/OfferPhoto">OfferPhoto</a> */}
                   <a onClick={this.logout} className="nav-item nav-link">Logout</a> </>}
             </div>
           </div>
         </nav>
-      </div>
-
-    )
-  }
-}
-
-export default withRouter(Nav);
+       </div>
+        
+      )}}
+  
+  export default withRouter(Nav);
